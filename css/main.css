@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main {
+  min-height: 100vh;
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.hide {
+  overflow: hidden;
+}
+
+.logo-img {
+  width: 80px;
+}
+
+.line1,
+.line2 {
+  width: 3.2rem;
+  height: 0.2rem;
+  margin: 1rem 0;
+  background-color: #fff;
+  pointer-events: none;
+}
+
+header {
+  min-height: 10vh;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  width: 90%;
+  margin: auto;
+  padding: 2rem 0;
+  z-index: 3;
+  position: relative;
+}
+
+form .input-group {
+  width: 50%;
+  margin: auto;
+  z-index: 1;
+}
+
+.countdown-date h2 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.countdown-date small {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #ddd;
+}
+
+.burger {
+  cursor: pointer;
+}
+
+.nav-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+  opacity: 1;
+  clip-path: circle(50px at 100% -10%);
+  -webkit-clip-path: circle(50px at 100% -10%);
+}
+
+.burger {
+  cursor: pointer;
+}
+
+.nav-links {
+  font-size: 4rem;
+  flex-basis: 30rem;
+}
+
+.nav-links a {
+  display: block;
+  font-size: 3rem;
+  padding: 0.5rem 1rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: #000;
+}
+
+.socials {
+  margin: 2rem 0;
+}
+
+.social-link {
+  padding: 1rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.contact {
+  flex-basis: 30rem;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.contact small {
+  margin-bottom: 1rem;
+}
+
+.contact .google-map {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  form .input-group {
+    width: 60%;
+  }
+
+  .countdown-date h2 {
+    font-size: 2.5rem;
+  }
+
+  .countdown-date small {
+    font-size: 1rem;
+  }
+
+  .nav-links a {
+    font-size: 2rem;
+    padding: 0.5rem 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .nav-bar {
+    padding-top: 6rem;
+    height: auto;
+    flex-direction: column;
+  }
+  .nav-links a {
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+  }
+
+  .nav-links {
+    flex-basis: auto;
+    width: 100%;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact small {
+    margin-bottom: 1rem;
+  }
+}
